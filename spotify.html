@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="spotifystyle.css">
+    <link rel="shortcut icon"
+        href="data:image/jpeg;base64,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"
+        type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Spotify</title>
+</head>
+
+<body>
+    <!-- sidebar nav Started  -->
+    <div class="sidebar">
+        <div class="sidebar-nav">
+            <div class="logo">
+                <a href=""><img src="logo-new.png" alt=""></a>
+            </div>
+            <ul>
+                <li><a href="">
+                        <span><i class="fa-solid fa-house"></i></span>
+                        <span>Home</span>
+                    </a></li>
+                    <li><a href="">
+                        <span><i class="fa-solid fa-magnifying-glass"></i></span>
+                        <span>Search</span>
+                    </a></li>
+            </ul>
+        </div>
+        <div class="sidebar-nav box2">
+            
+            <ul>
+                <li><a href="">
+                        <span><i class="fa-solid fa-book"></i></span>
+                        <span class="library">Your Library</span>
+                    </a></li>
+                    <li>
+                        <div class="sidebar-scroll">
+                            <div class="create-playlist">
+                                <h4>Create your first playlist</h4>
+                                <p>It's easy, we'll help you</p>
+                                <button>Create platlist</button>
+                            </div>
+                            <div class="create-playlist">
+                                <h4>Let's find some podcasts to follow</h4>
+                                <p>We'll kepp you update on new episodes </p>
+                                <button>Browse podcasts</button>
+                            </div>
+                        </div>
+                    </li>
+            </ul>
+            <div class="privacy">
+                <ul>
+                    <li>
+                        <a href="">Legal</a>
+                        <a href="">Safety & Privacy</a>
+                        <a href="">Privacy Policy</a>
+                    </li>
+                    <li>
+                        <a href="">Cookies</a>
+                        <a href="">About Ads</a>
+                        <a href="">Accessibility</a>
+                    </li>
+                    <li>
+                        <a href="">Cookies</a>
+                        
+                    </li>
+                </ul>
+         </div>
+        <div class="eng-btn">
+            <button>English</button>
+        </div>
+        </div>
+    </div>
+    <!-- sidebar nav Ended  -->
+     <!-- ...Main section Started...  -->
+      <div class="main-section">
+        <div class="top-nav">
+            <div class="prev-btn">
+              <button><i class="fa-solid fa-angle-left"></i></button>
+              <button><i class="fa-solid fa-angle-right"></i></button>
+            </div>
+            <div class="login-btn">
+                <button class="sign-up">Sign Up</button>
+                <button class="login">Login</button>
+
+            </div>
+        </div>
+        <!-- Popular Albums Started  -->
+<div class="spotify-playlist">
+    <h2>Popular Albums</h2>
+    <div class="card">
+        <div class="item">
+            <img src="https://i.scdn.co/image/ab67616d0000b2739bb2d30b01ac2cada8a8ad03" alt="">
+            <div class="play-btn">
+                <span><i class="fa-solid fa-play" id="pop-songs"></i></span>
+            </div>
+            <h4>Soulmate</h4>
+            <p>Badshah</p>
+        </div>
+        <div class="item">
+            <img src="https://i.scdn.co/image/ab67616d00001e02977c782bafbd277f163140d2" alt="">
+            <div class="play-btn">
+                <span><i class="fa-solid fa-play"></i></span>
+            </div>
+            <h4>Gumaan</h4>
+            <p>Talha Anjum, Talha Yunus</p>
+        </div>
+        <div class="item">
+            <img src="https://i.scdn.co/image/ab67616d00001e026404721c1943d5069f0805f3" alt="">
+            <div class="play-btn">
+                <span><i class="fa-solid fa-play"></i></span>
+            </div>
+            <h4>Chahun Main Ya Naa</h4>
+            <p>Mithoon, Ankit Tiwari, Jeet Gannguli</p>
+        </div>
+        <div class="item">
+            <img src="https://i.scdn.co/image/ab67616d00001e02e4be675de3a03b2ad2552c6d" alt="">
+            <div class="play-btn">
+                <span><i class="fa-solid fa-play"></i></span>
+            </div>
+            <h4>Malang Sajna</h4>
+            <p>Sachet Tandon, parampara Tandon, Kumaar </p>
+        </div>
+        <div class="item">
+            <img src="https://i.scdn.co/image/ab67616d00001e0262063c3a0c951e08f7913083" alt="">
+            <div class="play-btn">
+                <span><i class="fa-solid fa-play"></i></span>
+            </div>
+            <h4>Tere Bin - Original Score</h4>
+            <p>Shani Arshad</p>
+        </div>
+        <div class="item">
+            <img src="https://i.scdn.co/image/ab67616d00001e02b560693c17b20f01614c585c" alt="">
+            <div class="play-btn">
+                <span><i class="fa-solid fa-play"></i></span>
+            </div>
+            <h4>Tera Zikr</h4>
+            <p>Darshan Raval</p>
+        </div> 
+        <div class="item">
+            <img src="https://i.scdn.co/image/ab67616d00001e02f38fe9999b084f9d187b8534" alt="">
+            <div class="play-btn">
+                <span><i class="fa-solid fa-play"></i></span>
+            </div>
+            <h4>Thodi Jagah</h4>
+            <p>Arijit Singh, Tanishk Bagchi </p>
+        </div> 
+
+    </div>
+</div>
+<!-- Popular Albums Ended  -->
+<!-- Popular Radio started  -->
+<div class="spotify-playlist">
+    <h2> Popular radio</h2>
+    <div class="card">
+        <div class="item">
+            <img src="https://seeded-session-images.scdn.co/v2/img/540/r/artist/4YRxDV8wJFPHPTeXepOstw/en-GB" alt="">
+            <div class="play-btn">
+                <span><i class="fa-solid fa-play"></i></span>
+            </div>
+            <h4>Arijit Singh Radio</h4>
+            <p>With Neha Kakkar, Pritam KK, and more</p>
+        </div>
+        <div class="item">
+            <img src="https://seeded-session-images.scdn.co/v2/img/540/r/artist/2oSONSC9zQ4UonDKnLqksx/en" alt="">
+            <div class="play-btn">
+                <span><i class="fa-solid fa-play"></i></span>
+            </div>
+            <h4>Atif Aslam Radio</h4>
+            <p>With Ali Zafar, Rahat Fateh Ali Khan, Asim...</p>
+        </div>
+        <div class="item">
+            <img src="https://seeded-session-images.scdn.co/v2/img/540/r/artist/0GF4shudTAFv8ak9eWdd4Y/en-GB" alt="">
+            <div class="play-btn">
+                <span><i class="fa-solid fa-play"></i></span>
+            </div>
+            <h4>Kishore Kumar Radio</h4>
+            <p>With Mohammed Rafi, Asha Bhosle, R.D....</p>
+        </div>
+        <div class="item">
+            <img src="https://seeded-session-images.scdn.co/v2/img/540/r/artist/69xcFpmqTOmFNOL08Bxyci/en-GB" alt="">
+            <div class="play-btn">
+                <span><i class="fa-solid fa-play"></i></span>
+            </div>
+            <h4>Talha Anjum Radio</h4>
+            <p>With Talhah Yunus, Umair Young...  </p>
+        </div>
+        <div class="item">
+            <img src="https://seeded-session-images.scdn.co/v2/img/540/r/artist/2GoeZ0qOTt6kjsWW4eA6LS/en-GB" alt="">
+            <div class="play-btn">
+                <span><i class="fa-solid fa-play"></i></span>
+            </div>
+            <h4>Darshan Raval  Radio</h4>
+            <p>With Ayushmann Khurrana, Akull...</p>
+        </div>
+        <div class="item">
+            <img src="https://seeded-session-images.scdn.co/v2/img/540/r/artist/1mYsTxnqsietFxj1OgoGbG/en-GB" alt="">
+            <div class="play-btn">
+                <span><i class="fa-solid fa-play"></i></span>
+            </div>
+            <h4>A.R Rahman Radio</h4>
+            <p>With Shankar Mahadevan, Anirudh...  and more</p>
+        </div> 
+        <div class="item">
+            <img src="https://seeded-session-images.scdn.co/v2/img/540/r/artist/3gBKY0y3dFFVRqicLnVZYz/en-GB" alt="">
+            <div class="play-btn">
+                <span><i class="fa-solid fa-play"></i></span>
+            </div>
+            <h4>Alka Yagnik Radio</h4>
+            <p>With Udit Narayan, Kumar Sanu, Anuradha Paudwal... </p>
+        </div> 
+
+    </div>
+</div>
+<!-- Trending Episodes started  -->
+<div class="spotify-playlist">
+    <h3> Trending Episodes</h3>
+    <div class="card">
+        <div class="item">
+            <img src="https://i.scdn.co/image/ab67656300005f1f9f5d8dab58a909ef23fee583" alt="">
+            <div class="play-btn">
+                <span><i class="fa-solid fa-play"></i></span>
+            </div>
+            <h4>Welcome Back,...</h4>
+            <p>Jun 2021. 15min</p>
+        </div>
+        <div class="item">
+            <img src="https://i.scdn.co/image/ab6765630000ba8a099a357ed0a2a39424f2903d" alt="">
+            <div class="play-btn">
+                <span><i class="fa-solid fa-play"></i></span>
+            </div>
+            <h4>#73: Hotel of...</h4>
+            <p>Jun 2021. 93min</p>
+        </div>
+        <div class="item">
+            <img src="https://i.scdn.co/image/ab67656300005f1f9d2abc777125c182cf99b60f" alt="">
+            <div class="play-btn">
+                <span><i class="fa-solid fa-play"></i></span>
+            </div>
+            <h4>Anubis: god of...</h4>
+            <p>Jun 2021. 16min</p>
+        </div>
+        <div class="item">
+            <img src="https://i.scdn.co/image/ab67656300005f1f9d2abc777125c182cf99b60f" alt="">
+            <div class="play-btn">
+                <span><i class="fa-solid fa-play"></i></span>
+            </div>
+            <h4>Anubis: god of...</h4>
+            <p>Jun 2021. 13min</p>
+        </div>
+        <div class="item">
+            <img src="https://i.scdn.co/image/ab67656300005f1f36dbb0b2d65004488fcc322f" alt="">
+            <div class="play-btn">
+                <span><i class="fa-solid fa-play"></i></span>
+            </div>
+            <h4>Mahabharata...</h4>
+            <p>Apr 2014. 24min</p>
+        </div>
+        <div class="item">
+            <img src="https://i.scdn.co/image/ab67656300005f1f65fc4856285f7fcb49c08d43" alt="">
+            <div class="play-btn">
+                <span><i class="fa-solid fa-play"></i></span>
+            </div>
+            <h4>RelaxingRain...</h4>
+            <p>Aug 2019. 122min</p>
+        </div> 
+        <div class="item">
+            <img src="https://i.scdn.co/image/ab6765630000ba8a6807eaee16197dac1dd840e8" alt="">
+            <div class="play-btn"> 
+                <span><i class="fa-solid fa-play"></i></span>
+            </div>
+            <h4>Ep 8- Ye Na Th...</h4>
+            <p>Aug 2020. 3min </p>
+        </div> 
+
+    </div>
+</div>
+<!-- Footer section Started  -->
+<div class="footer-section">
+    <div class="footer">
+      <div class="footer-links">
+        <div class="footer-column">
+            <div>Company</div>
+            <ul class="col-links">
+                <li><a href="">About</a></li>
+                <li><a href="">Jobs</a></li>
+                <li><a href="">For the Record</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <div>Communities</div>
+            <ul class="col-links">
+                <li><a href="">For Artists</a></li>
+                <li><a href="">Developers</a></li>
+                <li><a href="">Advertising</a></li>
+                <li><a href="">Investors</a></li>
+                <li><a href="">Vendors</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <div>Useful links</div>
+            <ul class="col-links">
+                <li><a href="">Support</a></li>
+                <li><a href="">Free Mobile App</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <div>Spotify Plans</div>
+            <ul class="col-links">
+                <li><a href="">Premium Individual</a></li>
+                <li><a href="">Premium Duo</a></li>
+                <li><a href="">Premium Family</a></li>
+                <li><a href="">Premium Student</a></li>
+                <li><a href="">Spotify Free</a></li>
+            </ul>
+        </div>
+      </div>
+      <div class="social-link">
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-facebook"></i>
+      </div>
+    </div>
+</div>
+<hr>
+<div>
+    <p class="copyright">&COPY; 2024 Spotify AB</p>
+</div>
+ </div>
+ <div class="preview">
+    <div class="text">
+        <h4>Preview of Spotify</h4>
+        <p>Signup to get unlimited songs and podcasts with occasional ads. No credit card needed.</p>
+    </div>
+ 
+ <div class="button">
+    <button>Sign up free</button>
+ </div>
+</div>
+<!-- footer section ended  -->
+ <script src="songs.js"></script>
+</body>
+
+</html>
